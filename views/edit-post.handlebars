@@ -1,0 +1,40 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Pet
+  </h2>
+  <form class="edit-post-form">
+      <div class="control">
+      <input class="input is-rounded" name="pet-name" type="text" placeholder="" value="{{post.pet_name}}" />
+      </div>
+      <div class="control">
+      <input class="input is-rounded" name="pet-age" type="text" placeholder="" value="{{post.pet_age}}" />
+      </div>
+      <div class="control">
+      <input class="input is-rounded" name="pet-type" type="text" placeholder="" value="{{post.pet_type}}" />
+      </div>
+      <div class="control">
+      <input class="input is-rounded" name="pet-health" type="text" placeholder="" value="{{post.pet_health}}" />
+      </div>
+
+    <button class="button is-success" type="submit"> <span class="icon is-small">
+      <i class="fas fa-check"></i>
+    </span> <span> Save Pet </span>
+    </button>
+
+     <button type="button" class="delete-post-btn">Delete pet</button>
+
+    {{!-- <button class="button is-danger is-outlined" type="button" id="delete-post-btn">
+
+    <button class="delete-post-btn" type="button" >
+
+      <span> Delete Pet </span> 
+      <span class="icon is-small"> 
+        <i class="fab fa-times"></i>
+      </span> </button> --}}
+  </form>
+</article>
+
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

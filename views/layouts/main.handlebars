@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet findr</title>
+  <!--Materialize:Compiled and minified CSS -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>
+        <a href="/">Pet Findr</a>
+      </h1>
+        {{#if loggedIn}}
+        <a class="navbar-item" href="/dashboard">Dashboard</a>
+        <button id="logout" class="btn-no-style">Log Out</button>
+        {{else}}
+        <a role="button" class="button is-primary" href="/login">Login</a>
+        {{/if}}
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      <br>Created By @Group-6 - Kierra, Sevim, Max, Kyle</h3>
+    </footer>
+  </div>
+  
+  {{#if loggedIn}}
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
